@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
 public class States {
 
     @XmlElement(required = true)
-    protected List<S> s;
+    public List<S> s;
 
     /**
      * Gets the value of the s property.

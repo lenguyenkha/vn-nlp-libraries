@@ -65,7 +65,7 @@ public class FSMMarshaller {
 	 * Get the marshaller object.
 	 * @return
 	 */
-	private Marshaller getMarshaller() {
+	public Marshaller getMarshaller() {
 		if (marshaller == null) {
 			try {
 				// create the marshaller
@@ -86,7 +86,7 @@ public class FSMMarshaller {
 	 * @param name the name of FSM
 	 * @return a Fsm object.
 	 */
-	private Fsm createFsm(FSM fsm, String name) {
+	public Fsm createFsm(FSM fsm, String name) {
 		// create the marshaller
 		getMarshaller();
 		// build the machine object

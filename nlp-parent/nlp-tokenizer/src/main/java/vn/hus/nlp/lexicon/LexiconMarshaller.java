@@ -25,8 +25,8 @@ import vn.hus.nlp.lexicon.jaxb.W;
  */
 public class LexiconMarshaller {
 
-	JAXBContext jaxbContext; 
-	
+	JAXBContext jaxbContext;
+
 	Marshaller marshaller;
 	
 	/**
@@ -37,7 +37,7 @@ public class LexiconMarshaller {
 		//
 		createContext();
 	}
-	
+
 	private void createContext() {
 		jaxbContext = null;
 		try {
@@ -95,9 +95,7 @@ public class LexiconMarshaller {
 		try {
 			os = new FileOutputStream(filename);
 			getMarshaller().marshal(corpus, os);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (JAXBException e) {
+		} catch (FileNotFoundException | JAXBException e) {
 			e.printStackTrace();
 		}
 		

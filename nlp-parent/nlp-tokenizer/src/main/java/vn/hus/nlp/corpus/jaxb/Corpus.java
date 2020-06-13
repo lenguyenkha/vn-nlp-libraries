@@ -47,11 +47,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class Corpus {
 
     @XmlElement(required = true)
-    protected Body body;
+    public Body body;
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "NCName")
-    protected String id;
+    public String id;
 
     /**
      * Gets the value of the body property.

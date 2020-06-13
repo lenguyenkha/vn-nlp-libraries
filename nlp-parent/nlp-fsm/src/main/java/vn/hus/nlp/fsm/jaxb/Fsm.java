@@ -49,13 +49,13 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 public class Fsm {
 
     @XmlElement(required = true)
-    protected States states;
+    public States states;
     @XmlElement(required = true)
-    protected Transitions transitions;
+    public Transitions transitions;
     @XmlAttribute(required = true)
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlSchemaType(name = "NCName")
-    protected String name;
+    public String name;
 
     /**
      * Gets the value of the states property.

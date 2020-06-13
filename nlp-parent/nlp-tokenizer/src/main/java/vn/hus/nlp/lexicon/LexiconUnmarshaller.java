@@ -34,7 +34,7 @@ public class LexiconUnmarshaller {
 		//
 		createContext();
 	}
-	
+
 	private void createContext() {
 		jaxbContext = null;
 		try {
